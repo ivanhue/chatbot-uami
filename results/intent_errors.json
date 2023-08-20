@@ -1,0 +1,194 @@
+[
+  {
+    "text": "¿Cuál es la multa por no devolver libros?",
+    "intent": "info_universidad",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.8068442344665527
+    }
+  },
+  {
+    "text": "Si vivo fuera de la ciudad puedo ingresar a la universidad?",
+    "intent": "nuevo_ingreso",
+    "intent_prediction": {
+      "name": "licenciatura_posgrado",
+      "confidence": 0.9951632022857666
+    }
+  },
+  {
+    "text": "¿Cómo doy de baja una materia?",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.7337165474891663
+    }
+  },
+  {
+    "text": "¿Qué opciones existen para movilidad internacional?",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "info_universidad",
+      "confidence": 0.9999966621398926
+    }
+  },
+  {
+    "text": "Cómo puedo inscribirme al programa de movilidad nacional?",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "info_universidad",
+      "confidence": 0.9951075315475464
+    }
+  },
+  {
+    "text": "Cuanto tiempo dura la licenciatura en administración",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "nuevo_ingreso",
+      "confidence": 0.8609739542007446
+    }
+  },
+  {
+    "text": "ciencias atmosfericas",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "despedida",
+      "confidence": 0.735629141330719
+    }
+  },
+  {
+    "text": "computación",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "despedida",
+      "confidence": 0.5688930749893188
+    }
+  },
+  {
+    "text": "economia",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "saludo",
+      "confidence": 0.3581736087799072
+    }
+  },
+  {
+    "text": "filosofia",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "saludo",
+      "confidence": 0.8044508695602417
+    }
+  },
+  {
+    "text": "fisica",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.48269861936569214
+    }
+  },
+  {
+    "text": "geografia humana",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.9987642765045166
+    }
+  },
+  {
+    "text": "historia",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "info_universidad",
+      "confidence": 0.9903601408004761
+    }
+  },
+  {
+    "text": "ingenieria electronica",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "info_universidad",
+      "confidence": 0.9999970197677612
+    }
+  },
+  {
+    "text": "ingenieria en energia",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "info_universidad",
+      "confidence": 0.9941781759262085
+    }
+  },
+  {
+    "text": "ingenieria quimica",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "info_universidad",
+      "confidence": 0.567448079586029
+    }
+  },
+  {
+    "text": "letras hispanicas",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "info_universidad",
+      "confidence": 0.5947363972663879
+    }
+  },
+  {
+    "text": "linguistica",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "saludo",
+      "confidence": 0.7305855751037598
+    }
+  },
+  {
+    "text": "produccion animal",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "saludo",
+      "confidence": 0.860997200012207
+    }
+  },
+  {
+    "text": "ingenieria bioquimica industrial",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "info_universidad",
+      "confidence": 0.8907769918441772
+    }
+  },
+  {
+    "text": "ingenieria de los alimentos",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "info_universidad",
+      "confidence": 0.9999397993087769
+    }
+  },
+  {
+    "text": "divisiones academicas",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "info_universidad",
+      "confidence": 0.9995098114013672
+    }
+  },
+  {
+    "text": "cbs",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "despedida",
+      "confidence": 0.7994411587715149
+    }
+  },
+  {
+    "text": "csh",
+    "intent": "licenciatura_posgrado",
+    "intent_prediction": {
+      "name": "saludo",
+      "confidence": 0.9951406717300415
+    }
+  }
+]

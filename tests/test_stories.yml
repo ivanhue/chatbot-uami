@@ -1,0 +1,106 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+# intents:
+#   - saludo
+#   - info_universidad
+#   - nuevo_ingreso
+#   - licenciatura_posgrado
+#   - despedida
+#   - out_of_scope
+#   - bot_challenge
+
+# actions:
+#   - action_dar_info_general
+#   - utter_despedida
+#   - utter_necesitas_algo_mas
+#   - utter_saludo
+#   - utter_out_of_scope
+#   - utter_iambot
+
+
+stories:
+- story: pedir información path 1
+  steps:
+  - user: |
+      Hola, me puedes ayudar?
+    intent: saludo
+  - action: utter_saludo
+  - user: |
+      ¿Cómo puedo inscribir materias?
+    intent: licenciatura_posgrado
+  - action: action_dar_info_general
+  - action: utter_necesitas_algo_mas
+
+- story: pedir información path 2
+  steps:
+  - user: |
+      Hola!utter_necesitas_algo_mas
+    intent: saludo
+  - action: utter_saludo
+  - user: |
+      ¿Cómo puedo renunciar a una UEA?
+    intent: licenciatura_posgrado
+  - action: action_dar_info_general
+  - action: utter_necesitas_algo_mas
+  - user: |
+      Muchas gracias, adios!
+    intent: despedida
+  - action: utter_despedida
+
+- story: pedir información path 3
+  steps:
+  - user: |
+      ¿Dónde puedo contactar a mis profesores?
+    intent: info_universidad
+  - action: action_dar_info_general
+  - action: utter_necesitas_algo_mas
+  - user: |
+      No necesito nada más, gracias.
+    intent: despedida
+  - action: utter_despedida
+
+
+- story: pedir información path 4
+  steps:
+  - user: |
+      ¿Cuál es el calendario de la uami?
+    intent: info_universidad
+  - action: action_dar_info_general
+  - action: utter_necesitas_algo_mas
+  - user: |
+      Sí. ¿Cuando es el examen para los de nuevo ingreso?
+    intent: nuevo_ingreso
+  - action: action_dar_info_general
+  - action: utter_necesitas_algo_mas
+
+
+
+- story: pedir información path 5
+  steps:
+  - user: |
+      ¿Qué actividades culturales tiene la UAM esta semana?
+    intent: info_universidad
+  - action: action_dar_info_general
+  - action: utter_necesitas_algo_mas
+  - user: |
+      Sí. ¿Cuál es el modelo academico de la UAM?
+    intent: info_universidad
+  - action: action_dar_info_general
+  - action: utter_necesitas_algo_mas
+
+
+
+- story: decir adios
+  steps:
+  - user: |
+      Gracias. Adios
+    intent: despedida
+  - action: utter_despedida
+  
+
+- story: bot challenge
+  steps:
+  - user: |
+      ¿Tienes sentimientos?
+    intent: bot_challenge
+  - action: utter_iamabot

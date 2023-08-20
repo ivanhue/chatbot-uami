@@ -1,0 +1,147 @@
+version: "3.1"
+nlu:
+- intent: saludo
+  examples: |
+    - hey
+    - hola
+    - Que tal!
+    - buenos dias
+    - buenas tardes
+    - buenas noches
+    - hol
+    - qu tal
+    - Tengo una pregunta
+    - me puedes ayudar?
+    - Necesito ayuda
+    - ola
+    - buen dia
+    - buenosdias
+    - buenastardes
+    - buenasnoches
+    - ¿Hola?
+- intent: despedida
+  examples: |
+    - adios
+    - bye
+    - gracias, adios
+    - hasta luego
+    - by
+- intent: info_universidad
+  examples: |
+    - necesito informacion de los seminarios
+    - qué es rectoria
+    - quén es la secretaria de unidad?
+    - que es el consejo academico
+    - ¿Cuál es el Directorio?
+    - ¿Cuál es el calendario académico de la UAM Iztapalapa?
+    - Quiero saber las fechas importantes del calendario académico.
+    - ¿Hay opciones de becas disponibles?
+    - ¿Cuál es el horario de atención de los servicios escolares?
+    - Quiero saber cuándo están abiertas las oficinas de atención al estudiante.
+    - Necesito el número de teléfono para resolver mis dudas.
+    - ¿Cuál es la dirección de correo electrónico para consultas generales?
+    - ¿Dónde están ubicadas las oficinas de servicios estudiantiles?
+    - ¿Cómo ser parte del consejo academico?
+    - ¿Cómo ser ayudante de profesores?
+    - ¿Qué servicios estudiantiles tienen en la UAM Iztapalapa?
+    - Necesito información sobre los servicios de apoyo a los estudiantes.
+    - ¿Cuáles son los servicios disponibles para los estudiantes?
+    - ¿Qué actividades extracurriculares hay en la UAM Iztapalapa?
+    - Me interesa participar en actividades culturales y deportivas.
+    - ¿Cuáles son las opciones de actividades extracurriculares?
+    - Necesito información sobre los seminarios de la unidad de género
+    - ¿Hay eventos próximos en la UAM Iztapalapa?
+    - Me gustaría saber si hay alguna conferencia o actividad programada.
+    - ¿Dónde puedo encontrar información sobre eventos universitarios?
+    - ¿En qué horario puedo visitar la biblioteca?
+    - ¿Cuál es la multa por no devolver libros?
+    - coordinación de sistemas escolares
+- intent: nuevo_ingreso
+  examples: |
+    - ¿Cuáles son los requisitos de admisión para la UAM Iztapalapa?
+    - ¿Cuáles son los requisitos de ingreso a la universidad?
+    - ¿Cuáles son los pasos para hacer el examen de ingreso?
+    - ¿Cuál es el costo de la colegiatura para estudiantes nuevos?
+    - ¿Cuánto cuesta la matrícula en la UAM Iztapalapa?
+    - Si vivo fuera de la ciudad puedo ingresar a la universidad?
+- intent: licenciatura_posgrado
+  examples: |
+    - Hablame sobre la Oferta academica
+    - informacion sobre el Plan de estudios en la carrera de biologia.
+    - quiero saber sobre la division cbi
+    - Qué es una UEA?
+    - Cömo puedo renunciar a una UEA?
+    - Cómo puedo solicitar una optativa?
+    - ¿Qué servicios ofrece la UAM?
+    - ¿Cuáles son las carreras que ofrece la universidad?
+    - ¿Cuándo comienzan las clases este trimestre?
+    - ¿Cuándo comienzan las clases este semestre?
+    - ¿Cuándo comienzan las clases este cuatrimestre?
+    - ¿Cuándo comienzan las clases este bimestre?
+    - ¿Qué programas académicos ofrecen en la UAM Iztapalapa?
+    - Me gustaría saber más sobre los programas académicos disponibles.
+    - ¿Qué posgrados ofrece la uam?
+    - ¿Qué es pcyti?
+    - Cuantas oportunidades tengo para renunciar a una UEA?
+    - Qué pasa si renuncio a una UEA?
+    - ¿Cómo puedo adelantar UEAs?
+    - ¿Cuantas UEAS puedo meter?
+    - Cuantas materias puedo meter?
+    - ¿Qué puedo hacer si mi profesor se equivocó subiendo mi calificación?
+    - ¿Cómo puedo ingresar a un posgrado?
+    - ¿Cómo doy de baja una materia?
+    - tramites a nivel licenciatura
+    - ¿Qué opciones existen para movilidad internacional?
+    - Cómo puedo inscribirme al programa de movilidad nacional?
+    - Cuantas oportunidades tengo para reprobar?
+    - Cuanto tiempo dura la licenciatura en administración
+    - de que trata la licenciatura en antropoliga social?
+    - Cómo estudiar biologia?
+    - Cuantos aciertos pide Biologia experimental?
+    - De que trata la carrera en ciencias atmosfericas?
+    - Cómo puedo estudiar ciencia politica?
+    - cuantos aciertos pide computación
+    - Es dificil la licenciatura en economia
+    - El posgrado en filosofia es presencial
+    - cuantos años se estudia fisica
+    - cual es el campo laboral de geografia humana 
+    - Cuantas ueas se deben llevar en hidrobiologia
+    - mapa curricular de historia 
+    - La uam tiene la carrera en ingenieria biomedica?
+    - ¿Cómo estudiar ingenieria electronica?
+    - tiene campo laboral ingenieria en energia
+    - cuantas optativas tiene la ingenieria hidrologica
+    - por qué estudiar ingenieria quimica
+    - cuanto cuesta la maestria en letras hispanicas
+    - cómo entrar al doctorado en linguistica
+    - Cuál es el boligrama de matemáticas
+    - Cuantos años lleva estudiar produccion animal
+    - psicologia social tiene campo laboral?
+    - existe la carrera en quimica dentro de la uam?
+    - Cuales son los profesores que imparten sociologia
+    - ingenieria bioquimica industrial tiene ueas optativas?
+    - ingenieria de los alimentos de qué división es?
+    - cuáles son las divisiones academicas que tiene la uam iztapalapa
+    - que licenciaturas involucra cbi
+    - ¿qué significa cbs?
+    - historia esta en la división de csh?
+- intent: bot_challenge
+  examples: |
+    - Eres un robot?
+    - ¿Eres un humano?
+    - ¿Estoy hablando con un robot?
+    - ¿Estoy hablando con un humano?
+    - ¿Eres un humano o un bot?
+    - ¿Hablas como un humano o estás programado?
+    - ¿Eres una inteligencia artificial?
+    - ¿Eres realmente una persona o un chatbot?
+    - ¿Eres humano o una máquina?
+    - ¿Puedo hablar con una persona como una persona real?
+- intent: out_of_scope
+  examples: |
+    - ¿Puedes explicar la teoría de la relatividad?
+    - ¿Cuál es el mejor libro de ciencia ficción?
+    - ¿Cómo puedo hacer una tarta de manzana?
+    - ¿Cuál es el significado de la vida?
+    - 42
+    - bla bla bla

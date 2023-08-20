@@ -1,0 +1,77 @@
+{
+  "nuevo_ingreso": {
+    "precision": 0.8333333333333334,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.8333333333333334,
+    "support": 6,
+    "confused_with": {
+      "licenciatura_posgrado": 1
+    }
+  },
+  "despedida": {
+    "precision": 0.625,
+    "recall": 1.0,
+    "f1-score": 0.7692307692307693,
+    "support": 5,
+    "confused_with": {}
+  },
+  "licenciatura_posgrado": {
+    "precision": 0.9736842105263158,
+    "recall": 0.6271186440677966,
+    "f1-score": 0.7628865979381443,
+    "support": 59,
+    "confused_with": {
+      "info_universidad": 10,
+      "saludo": 5
+    }
+  },
+  "info_universidad": {
+    "precision": 0.7297297297297297,
+    "recall": 0.9642857142857143,
+    "f1-score": 0.8307692307692307,
+    "support": 28,
+    "confused_with": {
+      "out_of_scope": 1
+    }
+  },
+  "bot_challenge": {
+    "precision": 0.9090909090909091,
+    "recall": 1.0,
+    "f1-score": 0.9523809523809523,
+    "support": 10,
+    "confused_with": {}
+  },
+  "out_of_scope": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 6,
+    "confused_with": {}
+  },
+  "saludo": {
+    "precision": 0.7727272727272727,
+    "recall": 1.0,
+    "f1-score": 0.8717948717948718,
+    "support": 17,
+    "confused_with": {}
+  },
+  "accuracy": 0.816793893129771,
+  "macro avg": {
+    "precision": 0.7871760174391753,
+    "recall": 0.9178196702409779,
+    "f1-score": 0.8314851079210432,
+    "support": 131
+  },
+  "weighted avg": {
+    "precision": 0.8567333861126549,
+    "recall": 0.816793893129771,
+    "f1-score": 0.8111627780943905,
+    "support": 131
+  },
+  "micro avg": {
+    "precision": 0.816793893129771,
+    "recall": 0.816793893129771,
+    "f1-score": 0.816793893129771,
+    "support": 131
+  }
+}

@@ -1,0 +1,5 @@
+nltk
+pandas
+sentence_transformers
+HuggingFaceEmbeddings
+langchain

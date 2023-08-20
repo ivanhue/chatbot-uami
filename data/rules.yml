@@ -1,0 +1,43 @@
+version: "3.1"
+
+rules:
+
+- rule: Decir adios cuando el usuario diga adios
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Decir que no entendió la pregunta si esta fuera de su alcance.
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- rule: Responder pregunta de la universidad
+  steps:
+  - intent: info_universidad
+  - action: action_dar_info_general
+  - action: utter_necesitas_algo_mas
+
+
+- rule: Responder pregunta sobre ingresar a la universidad
+  steps:
+  - intent: nuevo_ingreso
+  - action: action_dar_info_general
+  - action: utter_necesitas_algo_mas
+
+
+- rule: Responder pregunta de la licenciatura o el posgrado
+  steps:
+  - intent: licenciatura_posgrado
+  - action: action_dar_info_general
+  - action: utter_necesitas_algo_mas
+
+  
+# info_universidad
+#   - nuevo_ingreso
+#   - licenciatura_posgrado

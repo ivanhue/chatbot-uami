@@ -1,0 +1,13 @@
+version: "3.1"
+stories:
+- story: pedir información path 3 (.\tests\test_stories.yml)
+  steps:
+  - intent: info_universidad
+  - action: action_dar_info_general
+  - action: utter_necesitas_algo_mas
+  - intent: despedida  # predicted: saludo: No necesito nada más, gracias.
+  - action: utter_despedida
+- story: bot challenge (.\tests\test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: info_universidad: ¿Tienes sentimientos?
+  - action: utter_iamabot

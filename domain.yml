@@ -1,0 +1,62 @@
+version: '3.1'
+intents:
+- bot_challenge
+- despedida
+- info_universidad
+- licenciatura_posgrado
+- nuevo_ingreso
+- out_of_scope
+- saludo
+actions:
+- action_dar_info_general
+- utter_necesitas_algo_mas
+- utter_despedida
+- utter_saludo
+- utter_out_of_scope
+- utter_iamabot
+responses:
+  utter_saludo:
+  - text: Hola. Puedes hacer una pregunta.
+  - text: ¡Hola. Estoy para ayudarte!
+  - text: ¡Hola! ¿En qué puedo ayudarte?
+  - text: Saludos. ¿Tienes alguna pregunta en mente?
+  - text: Hola. Estoy aquí para responder tus dudas.
+  - text: ¡Bienvenido! Cuéntame en qué puedo ayudarte hoy.
+  - text: ¡Hola! Soy tu asistente virtual, ¿cómo puedo asistirte?
+  - text: ¡Bienvenido a los Servicios Escolares de nuestra universidad! ¿En qué puedo ayudarte?
+  - text: ¡Hola! Estoy aquí para responder tus preguntas sobre trámites académicos y más.
+  - text: ¡Saludos estudiante! ¿En qué puedo asistirte con respecto a tu vida académica?
+  - text: Hola, ¿cómo estás? Como chatbot de Servicios Escolares, estoy aquí para resolver tus consultas académicas.
+  - text: ¡Hola! Estoy emocionado de ayudarte con tus inquietudes académicas. ¿En qué puedo colaborar?
+  utter_despedida:
+  - text: Fue un gusto ayudarte. Estaré para lo que necesites.
+  - text: Hasta pronto. Te esperaré para cuando tengas una nueva pregunta.
+  - text: Adios. Espero haber podido ayudarte.
+  - text: Gracias por consultarme. Si necesitas más ayuda, estaré aquí.
+  - text: Espero que hayas encontrado la información útil. ¡Hasta luego!
+  - text: Adiós, que tengas un buen día. Vuelve cuando quieras.
+  - text: Fue un placer ayudarte. Si tienes más preguntas, no dudes en volver.
+  - text: Hasta la próxima. Estaré aquí si necesitas más respuestas
+  - text: Gracias por usar nuestros Servicios Escolares. ¡Te deseo éxito en tus estudios!
+  - text: Espero que hayas encontrado toda la información que necesitas. Si tienes más preguntas, no dudes en volver.
+  - text: ¡Hasta pronto! Estaré aquí para brindarte apoyo en tus próximos pasos académicos.
+  - text: Fue un placer asistirte. Si necesitas más ayuda en el futuro, no dudes en regresar.
+  - text: Adiós por ahora. Recuerda que estamos aquí para ayudarte en cualquier momento.
+  utter_necesitas_algo_mas:
+  - text: ¿Tienes alguna otra pregunta o inquietud? Estoy aquí para ayudarte.
+  - text: ¿Necesitas más información o tienes alguna otra duda académica? Con gusto te asisto.
+  - text: No dudes en preguntar cualquier otra cosa que necesites saber sobre nuestros servicios académicos.
+  - text: ¿Te puedo ayudar con algo más? Estoy a tu disposición para responder todas tus consultas.
+  - text: Si tienes más dudas o necesitas saber algo adicional, estaré encantado de proporcionarte más detalles.
+  - text: ¿Hay algo más en lo que pueda ayudarte? No dudes en preguntar.
+  - text: Si tienes más preguntas o necesitas aclarar algo, estaré encantado de ayudarte.
+  - text: ¿Necesitas más información sobre nuestros servicios escolares? Estoy aquí para responder cualquier consulta adicional.
+  - text: Estoy a tu servicio. Si tienes más inquietudes académicas, no dudes en compartirlo conmigo.
+  - text: ¿Hay algo más que te gustaría saber? Estoy listo para proporcionarte la información que necesitas.
+  utter_iambot:
+  - text: Soy un chatbot preparado para resolver tus preguntas relacionadas a la Universidad y tu vida académica
+  utter_out_of_scope:
+  - text: Lo siento, no tengo información sobre ese tema o no entendí tu pregunta. ¿Puedo ayudarte con algo más relacionado con la UAM Iztapalapa?
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
