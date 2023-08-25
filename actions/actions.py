@@ -14,10 +14,10 @@ from rasa_sdk.executor import CollectingDispatcher
 from .tfidf import model, corpus, urls, keywords, vocabulary, metadatas
 from langchain.docstore.document import Document
 from langchain.embeddings import HuggingFaceEmbeddings
-import sentence_transformers
+# import sentence_transformers
 from sklearn.metrics.pairwise import cosine_similarity
 
-embedding = HuggingFaceEmbeddings(model_name="hiiamsid/sentence_similarity_spanish_es")
+# embedding = HuggingFaceEmbeddings(model_name="hiiamsid/sentence_similarity_spanish_es")
 
 
 class ActionDarInfoGeneral(Action):
@@ -42,26 +42,6 @@ class ActionDarInfoGeneral(Action):
         return indices # , documentos_mas_parecidos, metadatas_mas_parecidas
         
     
-    def search_engine(self, query, indices):
-        texto_results = [corpus[idx] for idx in indices]
-        metadatas_results = [metadatas[idx] for idx in indices]
-        
-        new_results = []
-        for doc, metadata in zip(texto_results, metadatas_results):
-            new_results.append(Document(page_content=doc, metadata=metadata))
-            
-        
-        embeddings = embedding.embed_documents([result.page_content for result in new_results])
-        query_embedding = embedding.embed_query(query)
-        
-        result = cosine_similarity([query_embedding], embeddings)
-        
-        documentos_similares = sorted(zip(result[0], indices), reverse=True)
-        print(documentos_similares)
-        
-        # urls_mas_parecidas = [metadata['url'] for metadata in metadatas_mas_parecidas] # metadatas_mas_parecidas.apply(lambda x: x.get("url")) doc['url'] for doc in lista_documentos
-        return documentos_similares # documentos_mas_parecidos, urls_mas_parecidas, valores
-    
     
 
     def run(self, dispatcher: CollectingDispatcher,
@@ -82,8 +62,8 @@ class ActionDarInfoGeneral(Action):
         indices_filtrados = list(indices_result.keys())
         valores = list(indices_result.values())
         
-        print("##############################",valores)
-        print("##############################",indices_filtrados)
+        # print("##############################",valores)
+        # print("##############################",indices_filtrados)
         
         documents_most_similar =  [corpus[i] for i in indices_filtrados]
         metadatas_mas_parecidas  = [metadatas[i] for i in indices_filtrados]
@@ -112,7 +92,7 @@ class ActionDarInfoGeneral(Action):
         # pregunta = "Qué puedo hacer en servicios escolares?"
         # documentos_similares = buscar_documentos_similares(keywords, query)
                 
-        msg = f"{valores}\nEstas son algunas páginas relacionadas que pude encontrar\n\n"+response+"\n\n"
+        msg = f"Estas son algunas páginas relacionadas que pude encontrar\n\n"+response+"\n\n"
         # model.tfidf_matrix
 
         dispatcher.utter_message(text=msg)

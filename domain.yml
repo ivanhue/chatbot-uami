@@ -13,7 +13,7 @@ actions:
 - utter_despedida
 - utter_saludo
 - utter_out_of_scope
-- utter_iamabot
+- utter_challenge
 responses:
   utter_saludo:
   - text: Hola. Puedes hacer una pregunta.
@@ -53,10 +53,10 @@ responses:
   - text: ¿Necesitas más información sobre nuestros servicios escolares? Estoy aquí para responder cualquier consulta adicional.
   - text: Estoy a tu servicio. Si tienes más inquietudes académicas, no dudes en compartirlo conmigo.
   - text: ¿Hay algo más que te gustaría saber? Estoy listo para proporcionarte la información que necesitas.
-  utter_iambot:
+  utter_challenge:
   - text: Soy un chatbot preparado para resolver tus preguntas relacionadas a la Universidad y tu vida académica
   utter_out_of_scope:
-  - text: Lo siento, no tengo información sobre ese tema o no entendí tu pregunta. ¿Puedo ayudarte con algo más relacionado con la UAM Iztapalapa?
+  - text: Lo siento, no tengo información sobre ese tema o no tengo claro cuál es tu pregunta. ¿Puedo ayudarte con algo más relacionado con la UAM Iztapalapa?
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

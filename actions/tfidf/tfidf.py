@@ -11,6 +11,7 @@ from nltk.stem.snowball import SnowballStemmer
 from nltk.stem import WordNetLemmatizer
 # nltk.download('punkt')
 # nltk.download('wordnet')
+# nltk.download('stopwords')
 
 
 

@@ -45,25 +45,30 @@ stories:
   - intent: out_of_scope
   - action: utter_out_of_scope
 
-# - story: dar info calendario
-#   steps:
-#   - user: |
-#       dame informacion sobre el calendario
-#   - intent: dar_info_general
-#   - action: action_dar_info_general
-#   - action: utter_necesitas_algo_mas
-
-
-# - story: dar info ingles
-#   steps:
-#   - user: |
-#       dame informacion sobre el ingles
-#   - intent: dar_info_general
-#   - action: action_dar_info_general
-#   - action: utter_necesitas_algo_mas
 
 - story: interactive_story_1
   steps:
   - intent: licenciatura_posgrado
   - action: action_dar_info_general
   - action: utter_necesitas_algo_mas
+
+
+
+- story: challenge_bot_1
+  steps:
+  - intent: licenciatura_posgrado
+  - action: action_dar_info_general
+  - action: utter_necesitas_algo_mas
+  - intent: bot_challenge
+  - action: utter_challenge
+
+
+
+- story: challenge_bot_2
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: bot_challenge
+  - action: utter_challenge
+
+

@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 data_path = "actions/tfidf/textos_2023_08_0111_50_30.json"
-model_path = "actions/tfidf/model_2023_08_0111_50_30_4.pickle"
+model_path = "actions/tfidf/model_2023_08_0111_50_30_5.pickle"
 
 df = pd.read_json(data_path)
 corpus = np.array(df["document"])
