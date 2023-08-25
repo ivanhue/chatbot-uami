@@ -85,6 +85,9 @@ Para mejorar la detección y clasificación de intenciones se debe de modificar 
 ### Recuperador
 En caso de que la recuperación de urls sea incorrecta o se desee mejorar se recomienda consultar el [repositorio](https://github.com/ivanhue/analisis-tfidf) donde se analiza el modelo y revisar la documentación de [TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html), así como revisar [articulos](https://medium.com/@cmukesh8688/tf-idf-vectorizer-scikit-learn-dbc0244a911a) al respecto
 
+### Conjunto de datos
+Para actualizar o crear conjunto de datos se recomienda revisar el [repositorio](https://github.com/ivanhue/scraping_urls) que contiene el algoritmo para recolección y filtrado de páginas web.
+
 ### Posibles errores.
 
 #### Instalando dependencias.
