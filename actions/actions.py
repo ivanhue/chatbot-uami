@@ -11,13 +11,7 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from .tfidf import model, corpus, urls, keywords, vocabulary, metadatas
-from langchain.docstore.document import Document
-from langchain.embeddings import HuggingFaceEmbeddings
-# import sentence_transformers
-from sklearn.metrics.pairwise import cosine_similarity
-
-# embedding = HuggingFaceEmbeddings(model_name="hiiamsid/sentence_similarity_spanish_es")
+from .tfidf import model, corpus, metadatas
 
 
 class ActionDarInfoGeneral(Action):
@@ -49,12 +43,12 @@ class ActionDarInfoGeneral(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         query = tracker.latest_message["text"]
         
-        try:
-            indices_result = self.get_documents(query)
-        except Exception as e:
-            print("No entendio", e)
-            dispatcher.utter_message(template="utter_out_of_scope")
-            return []
+        # try:
+        indices_result = self.get_documents(query)
+        # except Exception as e:
+            # print("No entendio", e)
+            # dispatcher.utter_message(template="utter_challenge")
+            # return []
         # documentos_similares = self.search_engine(query, indices_result)
         # print(indices_result)
         # valores = [value[0] for value in indices_result]
@@ -82,7 +76,7 @@ class ActionDarInfoGeneral(Action):
             if title == "" or url.endswith('.pdf'):
                 title = "Documento PDF"
             if len(title) > 15:
-                title = title[:30] + "..."
+                title = title[:45] + "..."
             response+=f"{title}: {url}\n"
         
         
