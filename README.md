@@ -4,7 +4,8 @@ Chatbot creado para servicios escolares utilizando RASA y TF-IDF
 
 ## Arquitectura
 
-![Chatbot UAM](https://github.com/ivanhue/chatbot-uami/assets/47096604/ff21c85c-416b-4020-812e-1cd5f3d536ee)
+![image](https://github.com/ivanhue/chatbot-uami/assets/47096604/d00e6ae5-4ca1-4169-80b9-d38f91e077ca)
+
 
 ## Deployment
 
@@ -12,7 +13,8 @@ Chatbot creado para servicios escolares utilizando RASA y TF-IDF
 
 Descargar código:
 
-![image](https://github.com/ivanhue/chatbot-uami/assets/47096604/29bff2e9-7810-4d41-8994-4dfdfd7b1f88)
+![image-1](https://github.com/ivanhue/chatbot-uami/assets/47096604/f355f328-9f74-4f8f-8826-075fecf3c310)
+
 
 Descargar [docker](https://www.docker.com/).
 
@@ -56,6 +58,8 @@ Y se recibirá una respuesta similar a esta:
 
 Una vez descargado el código se recomienda utilizar [conda](https://www.anaconda.com/), recordando habilitar la configuración de las **variables de entorno** para su uso en la linea de comandos del sistema operativo.
 
+![image-2](https://github.com/ivanhue/chatbot-uami/assets/47096604/353fd582-311e-41fe-a35a-12e55633a9ff)
+
 Una vez instalando conda se debe comprobar su correcto funcionamiento en la linea de comandos.
 
 ```bash
@@ -63,8 +67,8 @@ conda --version
 ```
 
 Mostrará la version de conda instalado
-![image](https://github.com/ivanhue/chatbot-uami/assets/47096604/238d091a-fea0-4ee0-9f67-0bca2ce83a86)
 
+![image-3](https://github.com/ivanhue/chatbot-uami/assets/47096604/28bd9772-1636-42c6-a456-e2e4081a8697)
 
 A continuación se debe crear un [entorno](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment) nuevo para configurar todos los requisitos, donde `chatbot-name` que se va usar para activar cada vez que se quiera utilizar el chatbot. La versión de python debe ser alguna de las que [soporta RASA](https://rasa.com/docs/rasa/installation/environment-set-up/#:~:text=Python%20Environment%20Setup&text=Currently%2C%20rasa%20supports%20the%20following,is%20not%20functional%20in%203.4.)
 
